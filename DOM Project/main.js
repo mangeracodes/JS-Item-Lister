@@ -53,7 +53,7 @@ function filterItems(e){
     var items = itemList.querySelectorAll('li');
     items.forEach(function(item){
         var itemName = item.firstChild.textContent;
-        if(itemName.toLocaleLowerCase().indexOf(text) != -1){
+        if(itemName.toLowerCase().indexOf(text) != -1){
             item.style.display = 'block';
         }
         else{
